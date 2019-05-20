@@ -180,6 +180,8 @@ fi
 #   cp -v $LOCAL_SOURCE_DIR/configuration/* $ARTIFACTS_HOME
 # fi
 
+echo "ROB: so far so good"
+
 if [ $(ls /opt/openshift/*.jar | wc -l) -eq 1 ]; then
   mv /opt/openshift/*.jar /opt/openshift/vertx-app.jar
   [ ! -f /opt/openshift/vertx-app.jar ] && echo "Application could not be properly built." && exit 1
