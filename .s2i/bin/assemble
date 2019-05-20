@@ -181,6 +181,7 @@ fi
 # fi
 
 echo "ROB: so far so good"
+set -x
 
 if [ $(ls /opt/openshift/*.jar | wc -l) -eq 1 ]; then
   mv /opt/openshift/*.jar /opt/openshift/vertx-app.jar
